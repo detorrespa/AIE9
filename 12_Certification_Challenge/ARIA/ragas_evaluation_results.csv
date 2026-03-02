@@ -1,0 +1,22 @@
+question,agent,Faith,CtxRec,FactCorr,RespRel,EntRec,Noise,actual_agent,agent_goal_accuracy,topic_adherence
+Como definir un roadmap de transformacion digital para una e,sector_agent,0.0,0.0,0.03,0.9534,0.0,0.0,,,
+Como definir un roadmap de transformacion digital para una empresa cosmetica?,,,,,,,,sector_agent,0.0,
+Como se calcula la huella hidrica en la industria cosmetica?,agua_agent,0.8966,0.0,0.25,0.9093,0.0,,agua_agent,0.0,0.5833333333284723
+Cual es el nivel de madurez digital del sector cosmetico en ,sector_agent,0.0,0.0,0.19,0.0,0.0,0.0,,,
+Cual es el nivel de madurez digital del sector cosmetico en Espana?,,,,,,,,sector_agent,0.0,0.4090909090890496
+Cual es la principal fuente de consumo de agua en una fabric,agua_agent,1.0,1.0,0.24,0.9351,0.0,0.3889,,,
+Cual es la principal fuente de consumo de agua en una fabrica cosmetica y como se puede reducir?,,,,,,,,agua_agent,1.0,0.6666666666592592
+Cuales son las principales barreras para la adopcion de IoT ,sector_agent,0.0,0.0,0.05,0.0,0.0,0.0,,,
+Cuales son las principales barreras para la adopcion de IoT en el sector cosmetico?,,,,,,,,sector_agent,0.0,0.42857142856836733
+Que es el concepto Dry Factory y como se aplica al sector co,agua_agent,0.56,0.0,0.38,0.0,0.0,0.0,,,
+Que es el concepto Dry Factory y como se aplica al sector cosmetico?,,,,,,,,agua_agent,0.0,0.13333333333244443
+Que establece la directiva UWWTD sobre el tratamiento de agu,agua_agent,0.9429,1.0,0.21,0.9097,0.0,,,,
+Que establece la directiva UWWTD sobre el tratamiento de aguas residuales urbanas?,,,,,,,,agua_agent,0.0,0.6363636363578512
+Que implica la directiva NIS2 para una fabrica cosmetica con,sector_agent,0.0238,0.0,0.21,0.9296,0.0,0.0,,,
+Que implica la directiva NIS2 para una fabrica cosmetica conectada?,,,,,,,,sector_agent,1.0,0.5833333333284723
+Que proveedores de MES o ERP recomienda el catalogo DIGIPYC ,matching_agent,0.0,0.0,0.0,0.0,0.0,0.0,,,
+Que proveedores de MES o ERP recomienda el catalogo DIGIPYC para una PYME cosmética?,,,,,,,,matching_agent,0.0,0.99999999995
+Que soluciones tecnologicas y digitales estan disponibles en,matching_agent,0.0,0.0,0.0,0.0,0.0,0.0,,,
+Que soluciones tecnologicas y digitales estan disponibles en el catalogo DIGIPYC?,,,,,,,,matching_agent,0.0,0.23076923076745562
+Que tecnologias avanzadas de tratamiento de efluentes existe,agua_agent,0.5946,0.0,0.0,0.0,0.0,,,,
+Que tecnologias avanzadas de tratamiento de efluentes existen para la industria cosmetica?,,,,,,,,agua_agent,0.0,0.6666666666611111
