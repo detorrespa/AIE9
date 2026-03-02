@@ -37,8 +37,10 @@ def get_qdrant_client() -> QdrantClient:
         client.get_collections()
         _qdrant_client = client
     except Exception:
-        console.print("[yellow]Qdrant server no accesible, usando modo local (disco).[/yellow]")
-        _qdrant_client = QdrantClient(path="./qdrant_data")
+        from pathlib import Path
+        local_path = Path(__file__).resolve().parent.parent.parent / "qdrant_data"
+        console.print(f"[yellow]Qdrant server no accesible, usando modo local: {local_path}[/yellow]")
+        _qdrant_client = QdrantClient(path=str(local_path))
 
     return _qdrant_client
 

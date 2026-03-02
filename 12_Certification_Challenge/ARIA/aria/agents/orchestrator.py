@@ -5,7 +5,7 @@ Graph: START -> router -> [agua_agent | sector_agent | matching_agent] -> END
 
 Agentes:
   agua_agent    : gestión hídrica + normativa ambiental (RAG + web)
-  sector_agent  : conocimiento sectorial cosmético (RAG + web): madurez, roadmaps, NIS2
+  sector_agent  : conocimiento sectorial cosmético (RAG + web)
   matching_agent: catálogo de soluciones y proveedores DIGIPYC (solo RAG)
 """
 
@@ -28,9 +28,9 @@ from aria.tools.retriever import agua_corpus_search, matching_corpus_search, sec
 from aria.tools.web_search import agua_web_search, sector_web_search
 
 AGENT_META = {
-    "agua_agent":    {"emoji": "\U0001f4a7", "label": "Optimización del Agua",    "color": "#10B981"},
-    "sector_agent":  {"emoji": "\U0001f3ed", "label": "Sector Cosmético",         "color": "#6366F1"},
-    "matching_agent":{"emoji": "\U0001f50d", "label": "Matching de Soluciones",   "color": "#F59E0B"},
+    "agua_agent":    {"emoji": "💧", "label": "Optimización del Agua",    "color": "#10B981"},
+    "sector_agent":  {"emoji": "🏭", "label": "Sector Cosmético",         "color": "#6366F1"},
+    "matching_agent":{"emoji": "🔍", "label": "Matching de Soluciones",   "color": "#F59E0B"},
 }
 
 AGENT_TOOLS = {
@@ -50,10 +50,11 @@ AGENT_TOOLS = {
         "corpus": matching_corpus_search,
         "web":    None,
         "prompt": MATCHING_SYSTEM,
-        "has_web": False,
+        "has_web": False,  # El catálogo es suficiente; no necesita web
     },
 }
 
+# Señales de que se necesita información actualizada de internet
 WEB_KEYWORDS = [
     "actual", "hoy", "2024", "2025", "2026", "precio", "coste",
     "convocatoria", "estado de transposicion", "ultima", "reciente",
@@ -78,6 +79,8 @@ def _agent_llm() -> ChatOllama:
         num_predict=2048,
     )
 
+
+# ── Graph Nodes ──────────────────────────────────────────────────────────────
 
 def router_node(state: ARIAState) -> dict:
     """Analiza la pregunta y selecciona el agente correcto."""
@@ -121,10 +124,12 @@ def agent_node(state: ARIAState) -> dict:
     tools_cfg   = AGENT_TOOLS[agent_name]
     tools_used  = []
 
+    # 1. Corpus RAG (siempre)
     corpus_result = tools_cfg["corpus"].invoke(question)
     tools_used.append(tools_cfg["corpus"].name)
     context_parts = [f"## Documentos del corpus\n\n{corpus_result}"]
 
+    # 2. Web search (solo agentes con web y si la pregunta lo requiere)
     if tools_cfg["has_web"]:
         needs_web = any(kw in question.lower() for kw in WEB_KEYWORDS)
         if needs_web:
@@ -134,6 +139,7 @@ def agent_node(state: ARIAState) -> dict:
 
     context = "\n\n---\n\n".join(context_parts)
 
+    # 3. Síntesis
     conversation_history = [
         m for m in state["messages"]
         if isinstance(m, (HumanMessage, AIMessage))
@@ -151,6 +157,7 @@ def agent_node(state: ARIAState) -> dict:
         HumanMessage(content=synthesis_prompt),
     ])
 
+    # Construir header de respuesta
     meta = AGENT_META[agent_name]
     tools_labels = {
         "agua_corpus_search":    "Corpus Agua",
@@ -174,6 +181,8 @@ def agent_node(state: ARIAState) -> dict:
 def route_to_agent(state: ARIAState) -> str:
     return state["active_agent"]
 
+
+# ── Build Graph ──────────────────────────────────────────────────────────────
 
 def build_graph():
     """Construye y compila el grafo ARIA con 3 agentes y memoria."""

@@ -1,117 +1,118 @@
-# ARIA — Agentic RAG para el Sector del Agua
+# ARIA — Agentic RAG for the Cosmetics Sector
 
-Sistema multi-agente RAG con interfaz conversacional para consultar 31 documentos del sector del agua y regulación medioambiental europea.
+Multi-agent RAG system with a conversational interface for querying 31 documents from the water sector and European environmental regulation.
 
-## Arquitectura
+## Architecture
 
 ```
-Usuario → Chainlit UI → Orquestador (LangGraph)
-                              ├─→ retrieve_documents (RAG: Qdrant + nomic-embed-text)
-                              └─→ search_web (DuckDuckGo)
-                              
-Ollama (RunPod RTX 5080) ← Gemma 3:27B + nomic-embed-text
-Docling ← Procesamiento de PDFs, PPTXs, imágenes
+User → Chainlit UI → Orchestrator (LangGraph)
+├─→ retrieve_documents (RAG: Qdrant + nomic-embed-text)
+└─→ search_web (DuckDuckGo)
+Ollama (RunPod RTX 4080) ← Gemma 3:27B + nomic-embed-text
+Docling ← Processing of PDFs, PPTXs, images
 ```
 
 ## Stack
 
-| Componente | Tecnología |
+| Component | Technology |
 |---|---|
 | LLM | Gemma 3:27B via Ollama |
 | Embeddings | nomic-embed-text via Ollama |
-| Orquestación | LangGraph (multi-agente) |
+| Orchestration | LangGraph (multi-agent) |
 | Vector Store | Qdrant |
-| Procesamiento docs | Docling |
-| Búsqueda web | DuckDuckGo |
+| Doc Processing | Docling |
+| Web Search | DuckDuckGo |
 | UI | Chainlit |
 | GPU | RunPod RTX 5080 |
 
-## Setup rápido
+## Quick Setup
 
-### 1. Entorno local
+### 1. Local Environment
 
 ```bash
-# Clonar y crear entorno virtual
+# Clone and create virtual environment
 cd c:\Dev\ARIA
 python -m venv .venv
 .venv\Scripts\activate  # Windows
 # source .venv/bin/activate  # Linux/Mac
 
-# Instalar dependencias
+# Install dependencies
 pip install -e ".[dev]"
 
-# Configurar variables de entorno
+# Configure environment variables
 copy .env.example .env
-# Editar .env con tus datos de RunPod
+# Edit .env with your RunPod details
 ```
 
 ### 2. Setup RunPod
 
 ```bash
-# Dentro del pod de RunPod (vía SSH):
+# Inside the RunPod pod (via SSH):
 bash scripts/setup_runpod.sh
 
-# Desde tu máquina local — abrir tunnel y verificar:
+# From your local machine — open tunnel and verify:
 python scripts/setup_runpod.py
 ```
 
-### 3. Ingestar documentos
+### 3. Ingest Documents
 
 ```bash
-# Colocar los 31 documentos en ./documents/
+# Place the 31 documents in ./documents/
 python scripts/ingest.py
-```
 
-### 4. Ejecutar ARIA
+### 4. Run ARIA
 
 ```bash
-# Interfaz web (Chainlit)
+# Web Interface (Chainlit)
 chainlit run aria/ui/app.py
 
-# Chat por terminal (testing)
+# Terminal Chat (testing)
 python scripts/chat.py
+
 ```
 
-## Estructura del proyecto
+## Project Structure
 
 ```
 ARIA/
 ├── aria/
-│   ├── config.py              # Configuración centralizada
+│   ├── config.py              # Centralized configuration
 │   ├── runpod/
-│   │   ├── tunnel.py          # SSH tunnel a RunPod
-│   │   └── setup.py           # Health checks y pull de modelos
+│   │   ├── tunnel.py          # SSH tunnel to RunPod
+│   │   └── setup.py           # Health checks and model pull
 │   ├── ingestion/
-│   │   ├── processor.py       # Conversión de documentos (Docling)
-│   │   └── chunker.py         # Estrategia de chunking
+│   │   ├── processor.py       # Document conversion (Docling)
+│   │   └── chunker.py         # Chunking strategy
 │   ├── vectorstore/
 │   │   └── store.py           # Qdrant + Ollama embeddings
 │   ├── tools/
-│   │   ├── retriever.py       # Herramienta RAG
-│   │   └── web_search.py      # Herramienta de búsqueda web
+│   │   ├── retriever.py       # RAG tool
+│   │   └── web_search.py      # Web search tool
 │   ├── agents/
-│   │   ├── orchestrator.py    # Grafo LangGraph principal
+│   │   ├── orchestrator.py    # Main LangGraph graph
 │   │   ├── prompts.py         # System prompts
-│   │   └── state.py           # Estado compartido
+│   │   └── state.py           # Shared state
 │   └── ui/
-│       └── app.py             # Interfaz Chainlit
+│       └── app.py             # Chainlit interface
 ├── scripts/
-│   ├── setup_runpod.py        # Setup local (tunnel + modelos)
-│   ├── setup_runpod.sh        # Setup dentro del pod
-│   ├── ingest.py              # Ingesta de documentos
-│   └── chat.py                # Chat terminal de prueba
-├── documents/                 # Los 31 documentos del sector
+│   ├── setup_runpod.py        # Local setup (tunnel + models)
+│   ├── setup_runpod.sh        # Setup inside the pod
+│   ├── ingest.py              # Document ingestion
+│   └── chat.py                # Terminal test chat
+├── documents/                 # The 31 sector documents
 ├── pyproject.toml
 └── .env.example
+
 ```
 
-## Flujo del agente
+## Agent Flow
 
-1. El usuario escribe una pregunta en lenguaje natural
-2. El orquestador analiza la pregunta y decide:
-   - **Solo RAG**: pregunta respondible con el corpus → `retrieve_documents`
-   - **Solo Search**: necesita info actualizada → `search_web`
-   - **Ambas**: pregunta compleja cross-domain → ejecuta ambas en secuencia
-3. Genera respuesta estructurada con:
-   - Respuesta principal con citas `[Documento, p.XX]`
-   - Artefactos opcionales: checklist, shortlist de proveedores, risk flags
+1. The user writes a question in natural language.
+2. The orchestrator analyzes the question and decides:
+  - **RAG Only**: query answerable with the corpus → `retrieve_documents`
+  - **Search Only**: needs updated information →  `search_web`
+  - **Both**: complex cross-domain query → executes both in sequence
+3. It generates a structured response including:
+  - Main answer with citations `[Documento, p.XX]`
+  - Optional artifacts: checklists, provider shortlists, risk flags
+

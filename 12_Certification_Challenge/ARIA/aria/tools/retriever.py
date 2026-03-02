@@ -7,7 +7,10 @@ from aria.vectorstore.store import get_vector_store
 
 
 def _make_retriever(categories: list[str] | None = None, k: int = 12):
-    """Build a retriever with optional category filter."""
+    """Build a retriever with optional category filter.
+    
+    k=12 y score_threshold=0.55 para recuperar más contexto (casos de éxito, ejemplos).
+    """
     store = get_vector_store()
     kwargs = {"k": k, "score_threshold": 0.55}
 

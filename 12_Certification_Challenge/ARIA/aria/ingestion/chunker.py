@@ -9,10 +9,11 @@ def chunk_document(doc: dict, chunk_size: int = 1000, chunk_overlap: int = 200) 
 
     Each chunk retains metadata about its source document and page.
     """
+    # Priorizar splits por secciones markdown para mantener "## Casos de éxito" con su contenido
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
-        separators=["\n\n", "\n", ". ", " ", ""],
+        separators=["\n\n## ", "\n\n", "\n", ". ", " ", ""],
     )
 
     chunks = []

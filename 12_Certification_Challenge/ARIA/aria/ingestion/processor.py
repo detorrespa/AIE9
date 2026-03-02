@@ -36,7 +36,7 @@ console = Console(force_terminal=True)
 def get_document_paths(docs_dir: Path | None = None) -> list[Path]:
     """Discover all supported documents in the documents directory."""
     docs_dir = docs_dir or settings.documents_dir
-    supported = {".pdf", ".pptx", ".ppt", ".docx", ".xlsx", ".html", ".png", ".jpg", ".jpeg", ".tiff"}
+    supported = {".pdf", ".pptx", ".ppt", ".docx", ".xlsx", ".html", ".png", ".jpg", ".jpeg", ".tiff", ".md"}
     paths = sorted(p for p in docs_dir.rglob("*") if p.suffix.lower() in supported)
     console.print(f"[cyan]Encontrados {len(paths)} documentos en {docs_dir}[/cyan]")
     return paths
@@ -63,6 +63,20 @@ def convert_documents(doc_paths: list[Path] | None = None) -> list[dict]:
 
     for path in track(doc_paths, description="Procesando documentos..."):
         try:
+            if path.suffix.lower() == ".md":
+                # Markdown: leer directamente sin Docling
+                full_md = path.read_text(encoding="utf-8", errors="replace")
+                pages = [{"page_num": 0, "content": full_md, "type": "Markdown"}]
+                results.append({
+                    "source": str(path),
+                    "source_name": path.stem,
+                    "full_markdown": full_md,
+                    "items": pages,
+                    "metadata": {"filename": path.name, "extension": ".md", "num_items": 1},
+                })
+                console.print(f"  [green]OK[/green] {path.name} (markdown)")
+                continue
+
             doc_result = converter.convert(str(path))
             doc = doc_result.document
 

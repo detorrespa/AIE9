@@ -1,5 +1,14 @@
 # ARIA — exclusions for AIE9 submission
 .env
+.venv/
+__pycache__/
+*.pyc
+qdrant_data/
+*.sqlite
+.lock
+ragas_phase1_cache.json
+.pytest_cache/
+.mypy_cache/
 
 # GitHub file size limit 100MB — exclude large docs
 documents/COSMEAU_Catalogo_soluciones_DEF.pptx
