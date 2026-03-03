@@ -1,0 +1,16 @@
+# Session 14: MCP-Powered X Post Summarizer
+# Dependencies for LangGraph agent with MCP tools
+
+# MCP & LangChain
+langchain-mcp-adapters
+langgraph
+langchain-openai
+langchain-core
+
+# API & utilities
+requests
+nest-asyncio
+python-dotenv
+
+# Jupyter (for kernel & notebook)
+ipykernel
