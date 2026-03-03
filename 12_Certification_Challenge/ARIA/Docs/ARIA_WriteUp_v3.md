@@ -248,3 +248,6 @@ The 85 company diagnostic chunks cannot be used in the current architecture with
 ARIA is the only system that combines three knowledge sources unavailable to any public LLM: the real-world digital maturity benchmark of the Spanish cosmetics sector (Dygipic), the DIGIPYC qualified technology solutions catalog, and the COSM-EAU water management research. These documents are not indexed on the internet.
 
 The measurable results — 100% routing accuracy, Faithfulness 0.819 for WaterAgent, and a concrete Phase 2 roadmap — provide the evidence base for a follow-on commercial engagement with FIBS that converts this bootcamp POC into a production advisory tool.
+
+**LOOM_Video** 
+https://www.loom.com/share/630492c3df2d4dabb49f0e19128bbdcd
