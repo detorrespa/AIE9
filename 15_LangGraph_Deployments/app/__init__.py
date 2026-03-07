@@ -9,9 +9,13 @@ from __future__ import annotations
 
 # Load environment variables from a .env file at import time so local servers pick them up
 try:
-    from dotenv import find_dotenv, load_dotenv
+    from pathlib import Path
 
-    load_dotenv(find_dotenv(), override=False)
+    from dotenv import load_dotenv
+
+    # Use absolute path so .env is found regardless of worker CWD
+    _env_path = Path(__file__).resolve().parent.parent / ".env"
+    load_dotenv(_env_path, override=False)
 except Exception:
     # dotenv not installed or .env not found; continue silently
     pass
