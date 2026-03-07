@@ -9,19 +9,25 @@ set -e
 
 echo "=== ARIA: Configurando Ollama en RunPod (Network Volume) ==="
 
-# 0. Dependencies
-apt-get update -qq && apt-get install -y -qq zstd
+# 0. Evitar prompts de debconf (apt/dpkg)
+export DEBIAN_FRONTEND=noninteractive
 
-# 1. Install Ollama
+# 1. Dependencies
+apt-get update -qq 2>/dev/null
+apt-get install -y -qq zstd apt-utils 2>/dev/null
+
+echo "[0/5] Dependencias instaladas."
+
+# 2. Install Ollama
 echo "[1/5] Instalando Ollama..."
 curl -fsSL https://ollama.com/install.sh | sh
 
-# 2. Crear directorio en Network Volume
+# 3. Crear directorio en Network Volume
 echo "[2/5] Configurando modelos en /workspace/.ollama (persistente)..."
 mkdir -p /workspace/.ollama
 export OLLAMA_MODELS=/workspace/.ollama
 
-# 3. Script de arranque para futuras sesiones
+# 4. Script de arranque para futuras sesiones
 echo "[3/5] Creando /workspace/start_ollama.sh..."
 cat > /workspace/start_ollama.sh << 'EOF'
 #!/bin/bash
@@ -32,12 +38,12 @@ ollama list
 EOF
 chmod +x /workspace/start_ollama.sh
 
-# 4. Start Ollama con modelos en /workspace
+# 5. Start Ollama con modelos en /workspace
 echo "[4/5] Iniciando Ollama server..."
 OLLAMA_MODELS=/workspace/.ollama nohup ollama serve > /workspace/ollama.log 2>&1 &
 sleep 5
 
-# 5. Pull models (solo si no existen)
+# 6. Pull models (solo si no existen)
 echo "[5/5] Descargando modelos en /workspace/.ollama..."
 if ! OLLAMA_MODELS=/workspace/.ollama ollama list 2>/dev/null | grep -q nomic-embed-text; then
   echo "  → nomic-embed-text..."

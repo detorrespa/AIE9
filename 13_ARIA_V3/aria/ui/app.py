@@ -35,6 +35,7 @@ async def warmup_ollama():
     """Pre-carga el modelo en RunPod para que la primera petición sea rápida."""
 
     async def _warm():
+        await asyncio.sleep(2)  # Dejar que Chainlit arranque primero
         try:
             await asyncio.to_thread(_run_router, "test")
         except Exception:
@@ -95,7 +96,7 @@ async def on_message(message: cl.Message):
         await cl.Message(
             content=f"**Error en el router (Ollama):** {type(router_error[0]).__name__}: {str(router_error[0])}\n\n"
             "Comprueba que el túnel SSH a RunPod está activo:\n"
-            "`ssh -N -L 11435:localhost:11434 -i ~/.ssh/id_ed25519 -p 11435 root@213.173.102.206`"
+            "`ssh -N -L 11435:localhost:11434 -i ~/.ssh/id_ed25519 -p 33945 root@213.173.102.99`"
         ).send()
         return
 

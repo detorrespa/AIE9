@@ -8,6 +8,8 @@ build/
 
 # Virtual environments
 .venv/
+.venv_py312/
+.venv312/
 venv/
 env/
 
@@ -22,6 +24,7 @@ env/
 
 # Vector store local data
 qdrant_data/
+qdrant_storage/
 
 # Processed documents cache
 .docling_cache/
@@ -30,3 +33,14 @@ processed_docs/
 # OS
 .DS_Store
 Thumbs.db
+
+# Chainlit state
+storage.sqlite
+
+# Large files (>50MB)
+COSMEAU_Catalogo_soluciones_DEF.pptx
+Roadmap_ltima_versin_-_Asamblea.pptx
+
+# Large documents (>50MB - use Git LFS or external storage)
+COSMEAU_Catalogo_soluciones_DEF.pptx
+Roadmap_ltima_versin_-_Asamblea.pptx

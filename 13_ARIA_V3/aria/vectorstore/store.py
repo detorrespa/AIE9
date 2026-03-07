@@ -28,26 +28,15 @@ def get_embeddings() -> OllamaEmbeddings:
 
 
 def get_qdrant_client() -> QdrantClient:
-    """Conecta al servidor Qdrant. Producción: sin fallback embebido."""
     global _qdrant_client
     if _qdrant_client is not None:
         return _qdrant_client
 
-    try:
-        client = QdrantClient(url=settings.qdrant_url, timeout=10)
-        client.get_collections()
-        _qdrant_client = client
-    except Exception as e:
-        console.print(
-            f"[red]Qdrant no accesible en {settings.qdrant_url}. "
-            "En producción se requiere el servidor Docker.[/red]"
-        )
-        console.print(f"[dim]Detalle: {e}[/dim]")
-        raise RuntimeError(
-            "Qdrant server no disponible. Arranca con: "
-            "docker run -d -p 6333:6333 -v ./qdrant_data:/qdrant/storage qdrant/qdrant"
-        ) from e
-
+    from pathlib import Path
+    local_path = Path(__file__).resolve().parent.parent.parent / "qdrant_data"
+    # aria_v2: siempre modo local (qdrant_data) para no chocar con Docker de aria_v3
+    console.print(f"[dim]Qdrant local: {local_path}[/dim]")
+    _qdrant_client = QdrantClient(path=str(local_path))
     return _qdrant_client
 
 

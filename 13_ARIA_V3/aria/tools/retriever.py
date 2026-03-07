@@ -6,22 +6,20 @@ from qdrant_client.models import FieldCondition, Filter, MatchAny
 from aria.vectorstore.store import get_vector_store
 
 
-def _make_retriever(categories: list[str] | None = None, k: int = 12):
+def _make_retriever(categories: list[str] | None = None, k: int = 8):
     """Build a retriever with optional category filter.
     
-    k=12 y score_threshold=0.55 para recuperar más contexto (casos de éxito, ejemplos).
+    MMR: fetch_k=20 para candidatos, lambda_mult=0.6 (relevancia vs diversidad).
     """
     store = get_vector_store()
-    kwargs = {"k": k, "score_threshold": 0.55}
+    kwargs = {"k": k, "fetch_k": 20, "lambda_mult": 0.6}
 
     if categories:
         kwargs["filter"] = Filter(
             must=[FieldCondition(key="category", match=MatchAny(any=categories))]
         )
 
-    return store.as_retriever(
-        search_type="similarity_score_threshold", search_kwargs=kwargs
-    )
+    return store.as_retriever(search_type="mmr", search_kwargs=kwargs)
 
 
 def _format_docs(docs) -> str:

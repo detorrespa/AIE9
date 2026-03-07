@@ -18,9 +18,10 @@ class Settings(BaseSettings):
     ollama_router_model: str = "gemma3:27b"
     ollama_embed_model: str = "nomic-embed-text"
 
-    # Qdrant
+    # Qdrant (aria_v2: local por defecto; usar servidor solo si QDRANT_USE_SERVER=true)
     qdrant_url: str = "http://localhost:6333"
     qdrant_collection: str = "aria_documents"
+    qdrant_use_local: bool = True  # True = qdrant_data; False = servidor en qdrant_url
 
     # Search
     search_max_results: int = 5

@@ -1,8 +1,6 @@
-# ARIA v3 — Agentic RAG for the Cosmetics Sector (Producción)
+# ARIA — Agentic RAG for the Cosmetics Sector
 
 Multi-agent RAG system with a conversational interface for querying 31 documents from the water sector and European environmental regulation.
-
-**v3** usa Qdrant en modo servidor (Docker). Sin fallback embebido. Ver [PRODUCCION.md](PRODUCCION.md) para arranque y requisitos.
 
 ## Architecture
 
