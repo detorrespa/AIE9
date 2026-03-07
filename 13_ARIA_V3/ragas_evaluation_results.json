@@ -1,0 +1,15 @@
+{
+  "routing_accuracy": 1.0,
+  "rag_global": {
+    "Faith": 0.6676,
+    "CtxRec": 0.3,
+    "FactCorr": 0.1333,
+    "RespRel": 0.6773,
+    "EntRec": 0.1868,
+    "Noise": 0.2724
+  },
+  "agent_global": {
+    "agent_goal_accuracy": 0.3117,
+    "topic_adherence": 0.5173
+  }
+}
