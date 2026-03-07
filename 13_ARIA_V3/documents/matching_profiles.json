@@ -1,0 +1,156 @@
+[
+  {
+    "provider": "AINIA",
+    "profile_text": "PROVIDER PROFILE: AINIA\nCategory: AI & Product Quality\nSolutions: SaaS NPD platform (New Product Development), Termoseal (thermal vision for seal defect detection), predictive models, NIR spectroscopy, SKINSPECTOR (collaborative robotics + spectral vision + AI for skin evaluation).\nUse cases: Innovation pipeline management, real-time product characterisation, seal defect detection on production lines, evaluation of cosmetic treatment efficacy on skin.\nTarget company size: Medium to large (sufficient R&D and production volume to justify SaaS investment)\nRequired digital maturity: Medium — requires structured data from production and R&D processes.\nIntegration: Compatible with existing laboratory and production environments; SKINSPECTOR is standalone hardware.\nEstimated investment: Medium (SaaS subscription model for NPD; hardware investment for SKINSPECTOR).\nCertifications: N/E\nContact: carlos.fernandez@ainia.es | +34 695 20 23 50 | https://www.ainia.com/\nKey differentiator: Unique combination of collaborative robotics, spectral vision and AI for extreme precision in skin and product characterisation. First methodology specifically validated for cosmetic water footprint calculation.",
+    "category": "matching",
+    "domain": "AI_quality_formulation",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "HI IBERIA",
+    "profile_text": "PROVIDER PROFILE: HI IBERIA\nCategory: AI & Digitalisation — Fragrance and Formulation\nSolutions: FragIA platform — RAG models + biochemical simulations + NLP for fragrance and cosmetic formulation. Virtual assistants (conversational AI). Generative AI simulations for new material design.\nUse cases: Virtual exploration and validation of ingredient combinations (reduces physical trials), personalised biological formulation, real-time adaptation of formulations to market trends via social media and consumer review analysis, technical conversational support for R&D teams.\nTarget company size: Any size — especially relevant for companies seeking to accelerate R&D and reduce time-to-market.\nRequired digital maturity: Medium — requires digitised formulation records and willingness to integrate AI in the creative process.\nIntegration: ERP, SCADA, LIMS.\nEstimated investment: N/E\nCertifications: N/E\nContact: Roberto Gómez-Espinosa Martín | robertogemartin@hi-iberia.es | +34 91 458 51 19\nKey differentiator: Reuse of historical organisational knowledge via RAG + explainable AI for perfumers and formulators without limiting artistic freedom. Validated in NANOMATIA, R3POWER and SMART MATERIAL innovation projects.",
+    "category": "matching",
+    "domain": "AI_formulation_fragrance",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "INNOCV SOLUTIONS",
+    "profile_text": "PROVIDER PROFILE: INNOCV SOLUTIONS\nCategory: AI & Automation — Customer Service and Document Management\nSolutions: GPT-based chatbots, document automation (OCR), ETL pipelines, semantic search, facial interpretation systems.\nUse cases: 24/7 e-commerce customer support, invoice and document digitalisation, creation of a Single Point of Truth for corporate data, automated contract review.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: CRM, ERP, MES.\nEstimated investment: N/E\nCertifications: N/E\nContact: Álvaro Sánchez | alvaro.sanchez@innocv.com | +34 680 139 778\nKey differentiator: Over 30 years of experience. Semantic and facial interpretation search capabilities. Strong background in document-heavy regulated environments.",
+    "category": "matching",
+    "domain": "AI_automation_documents",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "ITELLIGENT",
+    "profile_text": "PROVIDER PROFILE: ITELLIGENT\nCategory: Big Data & AI — Revenue Management and Pricing\nSolutions: Cloud-scale data processing, RPA (Robotic Process Automation), NLP, intelligent revenue management, dynamic pricing optimisation for perfumery and cosmetics retail.\nUse cases: Demand forecasting, intelligent price optimisation for cosmetics and perfumery retail, large-scale data analytics, process automation.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: N/E\nEstimated investment: N/E\nCertifications: N/E\nContact: Belén Albarracín | balbarracin@itelligent.es | +34 622 490 447\nKey differentiator: Pioneers in data analytics in Spain since 2008. Deep sector-specific experience in cosmetics and perfumery pricing intelligence.",
+    "category": "matching",
+    "domain": "data_analytics_pricing",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "KEYBOTIC",
+    "profile_text": "PROVIDER PROFILE: KEYBOTIC\nCategory: Industrial Robotics & AI — Predictive Maintenance\nSolutions: Keyper — autonomous quadruped robot for industrial environments. Capabilities: 3D mapping, thermal anomaly detection, gas leak detection, real-time alert system.\nUse cases: Predictive maintenance in production facilities, autonomous plant inspection, detection of leaks and thermal anomalies in water and energy systems, safety monitoring in restricted areas.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: N/E\nEstimated investment: N/E\nCertifications: N/E\nContact: Mireia Riera | mireia.riera@keybotic.com | 614 344 811\nKey differentiator: 100% in-house design and manufacturing in Spain. Real-time alerts. Operates in environments inaccessible or dangerous for human inspection.",
+    "category": "matching",
+    "domain": "robotics_predictive_maintenance",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "NEKTIU & DataAI",
+    "profile_text": "PROVIDER PROFILE: NEKTIU & DataAI\nCategory: Automation & AI — Supply Chain and Operations\nSolutions: RPA, Low-Code platforms, Generative AI, APS (Advanced Planning & Scheduling) systems, demand prediction models, stock optimisation.\nUse cases: Supply chain automation, demand forecasting, inventory control, ERP/MES/CRM integration, serverless cloud architecture for industrial operations.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: ERP, MES, CRM (AWS Serverless architecture).\nEstimated investment: N/E\nCertifications: N/E\nContact: Alberto de Torres | adetorres@nektiu.com | 670 788 782\nKey differentiator: 100% Cloud solution, modular, no proprietary servers, no complex custom code required. Rapid deployment from POC to production.",
+    "category": "matching",
+    "domain": "automation_supply_chain",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "OGA.ai",
+    "profile_text": "PROVIDER PROFILE: OGA.ai\nCategory: AI for Chemical Formulation\nSolutions: oga.Alchemy SaaS platform — AI-driven formulation optimisation for cosmetics, chemistry, and personal care. Formula replication and reverse engineering.\nUse cases: Optimisation of cosmetic and chemical formulations, reduction of trial-and-error in laboratory, formula replication from target specifications, accelerated ingredient substitution.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: ERP, LIMS.\nEstimated investment: N/E\nCertifications: N/E\nContact: Manuel Miranda | manuel.miranda@oga.ai | +34 667 413 340\nKey differentiator: Specifically designed to eliminate laboratory trial-and-error dependency. Validated for cosmetics sector formulation workflows.",
+    "category": "matching",
+    "domain": "AI_formulation_chemistry",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "SIGILLUM KS",
+    "profile_text": "PROVIDER PROFILE: SIGILLUM KS\nCategory: Regulatory Compliance — Cosmetics and Personal Care\nSolutions: SIG_COMPLY platform — automated toxicological validation, formula review against current EU cosmetics regulation (Regulation EC 1223/2009), ingredient compliance checking.\nUse cases: Automated validation of cosmetic formulas against regulatory requirements, elimination of manual compliance errors, accelerated time-to-market for new product launches, regulatory submission support.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: ERP, formulation management systems.\nEstimated investment: N/E\nCertifications: ISO 9001\nContact: Sebastián Cabo | sebastian.cabo@sigillumks.com | +34 881 906 781\nKey differentiator: High reliability through automated elimination of manual validation errors. Specific expertise in EU cosmetics regulatory framework.",
+    "category": "matching",
+    "domain": "regulatory_compliance_cosmetics",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "TECNALIA",
+    "profile_text": "PROVIDER PROFILE: TECNALIA\nCategory: Predictive Analytics & AI for Manufacturing\nSolutions: Custom Machine Learning and Deep Learning models for industrial processes. Solutions for process optimisation, failure prevention, and cosmetics personalisation.\nUse cases: Production process optimisation, predictive maintenance and failure prevention, personalised cosmetics formulation using consumer data, quality control via predictive models.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: N/E\nEstimated investment: N/E\nCertifications: N/E\nContact: N/E\nKey differentiator: AI adapted specifically to the productive business context — not generic models. Technology centre with broad industrial research background.",
+    "category": "matching",
+    "domain": "predictive_analytics_manufacturing",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "VICOMTECH",
+    "profile_text": "PROVIDER PROFILE: VICOMTECH\nCategory: NLP & Visual Computing\nSolutions: Natural language processing, voice recognition, visual computing, on-premise LLM deployment (private ChatGPT equivalent), automated data summarisation, automated quality control.\nUse cases: On-premise conversational AI for sensitive corporate data, automated summarisation of regulatory documents, voice-controlled manufacturing operations, automated visual inspection.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: Hybrid integration with business rules and LLMs.\nEstimated investment: N/E\nCertifications: N/E\nContact: Dra. Maria Teresa Linaza | mtlinaza@vicomtech.org | 943 309 230\nKey differentiator: Proprietary technology backed by 250+ researchers. On-premise deployment ensures data sovereignty — particularly relevant for companies with sensitive formulation or customer data.",
+    "category": "matching",
+    "domain": "NLP_visual_computing",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "XITASO IBERIA",
+    "profile_text": "PROVIDER PROFILE: XITASO IBERIA\nCategory: Generative AI & Digital Product Passport\nSolutions: Digital Product Passport (DPP) implementation, structuring and homogenisation of heterogeneous data sources (PDF, Excel, databases), Industry 4.0 consulting, IoT integration, digital twins, augmented reality.\nUse cases: EU Digital Product Passport compliance (upcoming regulation), heterogeneous data integration for sustainability reporting, IoT-connected manufacturing optimisation, digital twin for production simulation, cybersecurity consulting and auditing (RGPD, NIS2, IEC 62443).\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: ERP, internal databases.\nEstimated investment: N/E\nCertifications: N/E\nContact: Joaquín Salinas | joaquin.salinas@xitaso.com | +34 910 62 59 42\nKey differentiator: Enables frictionless compliance with new European sustainability regulations (DPP). Broad Industry 4.0 expertise from IoT to digital twins to cybersecurity.",
+    "category": "matching",
+    "domain": "digital_transformation_DPP",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "ACK LOGIC",
+    "profile_text": "PROVIDER PROFILE: ACK LOGIC\nCategory: Automation & Industry 4.0 — Manufacturing Execution\nSolutions: Gladdis Smed software, BATCH systems, MES (Manufacturing Execution System), electronic manufacturing guides (Paperless Factory).\nUse cases: Paperless factory implementation, electronic batch records, optimisation of format changeover times, production order management, integration of SCADA/DCS with ERP.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: ERP, SCADA, DCS.\nEstimated investment: N/E\nCertifications: N/E\nContact: N/E\nKey differentiator: Strong specialisation in chemical, pharmaceutical and cosmetics manufacturing. Deep expertise in regulated batch production environments.",
+    "category": "matching",
+    "domain": "MES_manufacturing_automation",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "FUNDITEC",
+    "profile_text": "PROVIDER PROFILE: FUNDITEC\nCategory: Cybersecurity, Blockchain & AI — Industrial and Supply Chain\nSolutions: Supply chain traceability with Smart Contracts (blockchain), OT/IoT cybersecurity, eco-sustainable packaging simulation via AI, anomaly detection in supplier networks.\nUse cases: NIS2 compliance for connected manufacturing environments, immutable traceability of ingredients and raw materials, anomaly detection in supplier behaviour, eco-design optimisation for packaging, OT security for factories with IoT/SCADA.\nTarget company size: Medium to large (50+ employees)\nRequired digital maturity: Medium-High\nIntegration: ERP, MES, SCM via APIs.\nEstimated investment: Medium-High\nCertifications: NIS2 aligned, IEC 62443\nContact: Melany León | melany.leon@funditec.es | +34 628 929 508 | www.funditec.es\nKey differentiator: Public-private collaboration model. Covers the full journey from POC to production. Unique combination of blockchain traceability + OT cybersecurity + AI in a single provider.",
+    "category": "matching",
+    "domain": "cybersecurity_blockchain_traceability",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "ÓRBITA INGENIERÍA",
+    "profile_text": "PROVIDER PROFILE: ÓRBITA INGENIERÍA\nCategory: Automation & Computer Vision — Packaging Quality Control\nSolutions: Órbita Avisos (real-time plant notifications via Email/Telegram), computer vision system for dynamic label and packaging inspection.\nUse cases: 360° visual inspection of all labels on cylindrical containers at production line speed, real-time defect notification to production supervisors, SCADA-integrated quality alerting.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: SCADA system (WinCC).\nEstimated investment: N/E\nCertifications: N/E\nContact: N/E\nKey differentiator: 360° inspection of all labels on cylindrical packaging — a specific challenge in cosmetics and perfumery bottling lines. Real-time alert system via common messaging channels.",
+    "category": "matching",
+    "domain": "computer_vision_quality_packaging",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "SETESUR",
+    "profile_text": "PROVIDER PROFILE: SETESUR\nCategory: IoT as a Service — Environmental and Industrial Monitoring\nSolutions: IoT sensors as a service (50+ sensor catalog), Cloud platform, ML-based anomaly detection, environmental quality monitoring.\nUse cases: Air and water quality monitoring in production environments, people/vehicle counting, industrial gas leak detection, real-time anomaly detection via machine learning, regulatory environmental compliance monitoring.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: Web and mobile platform.\nEstimated investment: N/E\nCertifications: N/E\nContact: Pedro Gea | pedro.gea@setesur.com | 619 871 947\nKey differentiator: Integrated hardware + software in a single service contract. Catalog of 50+ IoT sensors covers virtually all industrial monitoring needs without multi-vendor complexity.",
+    "category": "matching",
+    "domain": "IoT_environmental_monitoring",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "GMV",
+    "profile_text": "PROVIDER PROFILE: GMV\nCategory: Cybersecurity — Incident Response and Threat Intelligence\nSolutions: GMV-CERT (Computer Emergency Response Team), SOAR (Security Orchestration Automation and Response), Threat Intelligence platform, penetration testing, security auditing.\nUse cases: Security incident management and response, automated threat detection and containment, penetration testing for web and OT assets, NIS2 compliance readiness assessment, global threat intelligence for cosmetics sector.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: SIEM.\nEstimated investment: N/E\nCertifications: N/E\nContact: Javier Zubieta | Marketing.TIC@gmv.com\nKey differentiator: Specialised global incident response team (GMV-CERT). Combines automated response (SOAR) with human expert escalation. Proven track record in critical infrastructure.",
+    "category": "matching",
+    "domain": "cybersecurity_incident_response",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "IRONTEC",
+    "profile_text": "PROVIDER PROFILE: IRONTEC\nCategory: Cybersecurity & Cloud — Compliance and Managed Security\nSolutions: CISO as a Service, EDR (Endpoint Detection and Response), SASE (Secure Access Service Edge), ZTNA (Zero Trust Network Access), DRP (Disaster Recovery Plan), DevSecOps, web auditing, penetration testing.\nUse cases: NIS2 and ENS (Spanish National Security Framework) compliance, cloud security for AWS/Azure hybrid environments, human firewall activation (security awareness training), disaster recovery planning, continuous security posture management.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: AWS, Azure, hybrid cloud.\nEstimated investment: N/E\nCertifications: N/E\nContact: Inma González | igonzalez@irontec.com | +34 610 517 152\nKey differentiator: Absolute technological neutrality — recommends best solution regardless of vendor. Proprietary methodological framework aligned with business objectives, not just technical compliance.",
+    "category": "matching",
+    "domain": "cybersecurity_cloud_compliance",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "RANDSTAD DIGITAL",
+    "profile_text": "PROVIDER PROFILE: RANDSTAD DIGITAL\nCategory: Cybersecurity — SOC as a Service\nSolutions: Semi-automated SOCaaS (Security Operations Centre as a Service), SIEM integration, 24x7 surveillance, compliance reporting, CAU (User Attention Centre) for first-level security incidents.\nUse cases: Continuous 24x7 monitoring of security events, automated hardening of identified vulnerabilities, regulatory compliance reporting (NIS2, GDPR), incident classification and escalation, security awareness for non-technical staff.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: N/E\nEstimated investment: N/E\nCertifications: ISO 9001, ISO 14001, ISO 27001, ISO 45001\nContact: Natividad Vilela | Natividad.vilela@randstad.es | +34 673 582 872\nKey differentiator: Semi-attended SOC model with CAU reduces cost vs fully-staffed SOC while maintaining 24x7 coverage. ISO 27001 certified — highest information security management standard.",
+    "category": "matching",
+    "domain": "cybersecurity_SOC_monitoring",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "EMBEBLUE",
+    "profile_text": "PROVIDER PROFILE: EMBEBLUE\nCategory: Embedded Systems & IoT — Industrial Water Control\nSolutions: Custom IoT hardware engineering, industrial connectivity solutions, water parameter control systems.\nUse cases: Connectivity and real-time control of industrial water parameters (flow, pressure, quality), custom embedded hardware for specific industrial measurement needs.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: N/E\nEstimated investment: N/E\nCertifications: N/E\nContact: Javier Hualde | jhualde@embeblue.com | 664 660 807\nKey differentiator: Custom hardware engineering for specific industrial IoT needs — fills the gap where off-the-shelf sensors are insufficient for specialised water management applications in cosmetics.",
+    "category": "matching",
+    "domain": "IoT_embedded_water",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "BARBARA",
+    "profile_text": "PROVIDER PROFILE: BARBARA\nCategory: Edge Computing & Industrial MLOps\nSolutions: Barbara OS (industrial edge operating system), MLOps at the edge, dockerised deployment on plant hardware, virtual predictive meters.\nUse cases: Deployment of AI/ML models directly on plant hardware without sending data to cloud, creation of virtual predictive meters from existing sensor data, edge-based anomaly detection, OPC-UA and MQTT integration for existing SCADA systems.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: OPC-UA, MQTT, Node-RED.\nEstimated investment: N/E\nCertifications: N/E\nContact: N/E\nKey differentiator: MLOps capabilities at the edge without requiring critical production data to leave the plant. Dockerised deployment enables rapid iteration of AI models on existing industrial hardware.",
+    "category": "matching",
+    "domain": "edge_computing_MLOps",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "CODE CONTRACT",
+    "profile_text": "PROVIDER PROFILE: CODE CONTRACT\nCategory: Blockchain — Traceability and Quality Certification\nSolutions: Certified digital twin with blockchain, immutable quality and origin certification, water traceability systems.\nUse cases: Guarantee of ingredient and raw material origin, immutable water quality certification (for COSM-EAU type applications), supply chain traceability for regulatory compliance, reputational risk mitigation through transparent provenance records.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: Data Science web apps, Cloud.\nEstimated investment: N/E\nCertifications: N/E\nContact: Sergio Gallastegi | sergio@codecontract.io\nKey differentiator: Immutable blockchain-based traceability eliminates fraud and error risk in supply chain documentation. Specific application to water quality certification — directly relevant to COSM-EAU water management projects.",
+    "category": "matching",
+    "domain": "blockchain_traceability",
+    "source_name": "DIGIPYC_matching_profiles"
+  },
+  {
+    "provider": "MYTRA",
+    "profile_text": "PROVIDER PROFILE: MYTRA\nCategory: SCADA Integration — Critical Infrastructure Unification\nSolutions: Unification of isolated industrial control systems (Netin, Sinaut, VersionDog) into a single integrated SCADA platform with SIEM connectivity.\nUse cases: Integration of fragmented SCADA/DCS systems across production sites, unified visibility of critical infrastructure, SIEM integration for security monitoring of OT environments, reduction of operational silos in multi-site cosmetics manufacturing.\nTarget company size: N/E\nRequired digital maturity: N/E\nIntegration: SCADA, SIEM.\nEstimated investment: N/E\nCertifications: N/E\nContact: Igor Navascues | inavascues@mytra.es | 608 70 77 39\nKey differentiator: Specialises in unifying previously isolated critical infrastructures — addresses the specific challenge of cosmetics manufacturers operating multiple incompatible legacy SCADA systems.",
+    "category": "matching",
+    "domain": "SCADA_integration",
+    "source_name": "DIGIPYC_matching_profiles"
+  }
+]
