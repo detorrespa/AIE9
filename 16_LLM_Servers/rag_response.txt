@@ -1,0 +1,34 @@
+[human] What are the recommended vaccinations for kittens? use retrieve_information tool.
+
+[ai] calling tools: retrieve_information
+
+[tool] retrieve_information: **Recommended vaccinations for kittens**
+
+| Vaccine (core for kittens) | Description / timing guidance |
+|----------------------------|------------------------------|
+| **Rabies** | Mandatory core vaccine for all kittens. |
+| **Feline herpesvirus‑1 (FHV‑1)** | Core vaccine; kittens receive the initial series and should be revaccinated at 6 months to reduce the window of susceptibility. |
+| **Feline calicivirus (FCV)** | Core vaccine; same timing as FHV‑1. |
+| **Feline panleukopenia virus (FPV)** | Core vaccine; same timing as FHV‑1 and FCV. |
+| **Feline leukemia virus (FeLV)** | Considered core for kittens and young cats. Revaccinate 12 months after the last dose of the kitten series, then annually for cats at high risk. |
+
+*Non‑core vaccines* may also be recommended based on the kitten’s life stage, lifestyle, environment, and local disease risk, but the core vaccines listed above are the minimum vaccination protocol for kittens.
+
+[ai] **Core vaccinations for kittens (minimum protocol)**  
+
+| Vaccine | What it protects against | Typical schedule (first‑time series) | When to finish the series |
+|---------|--------------------------|--------------------------------------|---------------------------|
+| **Rabies** | Rabies virus (mandatory in most countries) | 12–16 weeks (or as required by local law) | One dose, then a booster 1 year later (or as required) |
+| **Feline panleukopenia (FPV)** | “Feline distemper” – a highly contagious, often fatal viral disease | 6–8 weeks, 10–12 weeks, 14–16 weeks | 3‑dose series, then a booster at 12 months |
+| **Feline herpesvirus‑1 (FHV‑1)** | Upper‑respiratory disease (viral rhinotracheitis) | 6–8 weeks, 10–12 weeks, 14–16 weeks | 3‑dose series, then a booster at 12 months |
+| **Feline calicivirus (FCV)** | Upper‑respiratory disease (calicivirus) | 6–8 weeks, 10–12 weeks, 14–16 weeks | 3‑dose series, then a booster at 12 months |
+| **Feline leukemia virus (FeLV)** | FeLV infection (high‑risk kittens) | 8–10 weeks, 12–14 weeks, 16–18 weeks | 3‑dose series, then a booster at 12 months; annual boosters thereafter for high‑risk cats |
+
+> **Key points**  
+> * The first dose of the core series is usually given at **6–8 weeks** of age.  
+> * Subsequent doses are spaced **4 weeks apart** (e.g., 10–12 weeks, 14–16 weeks).  
+> * A **booster at 12 months** (or 1 year) is recommended for all core vaccines.  
+> * Rabies is often required by law and may have a different timing or booster interval depending on local regulations.  
+> * FeLV is considered a core vaccine for kittens and young cats that are at risk (e.g., outdoor, multi‑cat households, shelters).  
+
+**Non‑core vaccines** (e.g., Bordetella, Chlamydophila, Mycoplasma, influenza, etc.) may be added based on the kitten’s lifestyle, environment, and local disease prevalence. Always discuss a vaccination plan with your veterinarian to tailor it to your kitten’s specific needs.

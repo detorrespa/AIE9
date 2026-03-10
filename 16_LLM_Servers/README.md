@@ -82,6 +82,8 @@ Follow these steps to prepare and submit your homework assignment:
 What is the difference between serverless and dedicated endpoints?
 
 #### ✅ Answer:
+Serverless endpoints are shared infrastructure endpoints where you pay per token/request with no upfront reservation. The provider dynamically allocates compute across multiple tenants, scaling automatically with demand. This makes them cost-efficient for low or unpredictable traffic — you only pay for what you use. The trade-off is variable latency (especially cold starts) and no guaranteed capacity during peak demand.
+Dedicated endpoints (like Fireworks AI's On-Demand Deployment via firectl) reserve exclusive GPU resources for your workload. The model is always warm and running, giving you consistent, predictable latency and guaranteed throughput regardless of platform load. The trade-off is cost: you pay for reserved compute whether you use it or not, making it expensive for sporadic usage.
 
 _(insert your answer here)_
 
@@ -90,6 +92,10 @@ _(insert your answer here)_
 Why is it important to consider token throughput and latency when choosing an LLM for user-facing applications?
 
 #### ✅ Answer:
+Token throughput refers to how many tokens (or requests) a system can process per unit of time. Latency refers to the delay — either time-to-first-token (TTFT) or total response time — before a user receives output.
+In user-facing applications like chatbots or AI assistants, these two metrics are directly tied to user experience. High latency creates a perception of a broken or slow product — studies consistently show users abandon interactions after just a few seconds of waiting. Streaming helps mitigate this (lower TTFT feels faster), but the underlying model and infrastructure still set the floor.
+Throughput becomes critical at scale. If your endpoint cannot handle concurrent users, requests queue up, latency spikes, and the system degrades for everyone. This is especially dangerous for production applications with SLAs — a bottlenecked LLM becomes the single point of failure for the entire product.
+From a cost perspective, low-throughput systems require more infrastructure to serve the same user volume, increasing cost-per-query. Choosing a model and endpoint that balances throughput, latency, and cost is therefore not just a technical decision — it is a product and business decision that determines whether an LLM application is actually viable in production.
 
 _(insert your answer here)_
 

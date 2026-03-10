@@ -68,12 +68,15 @@ def _build_rag_graph(data_dir: str):
     chunks = text_splitter.split_documents(documents) if documents else []
 
     # Embeddings and vector store (in-memory Qdrant)
+    # qwen3-embedding-4b uses 2560 dims; qwen3-embedding-8b uses 4096
+    emb_model = os.environ.get("FIREWORKS_EMBEDDING_MODEL", "accounts/fireworks/models/qwen3-embedding-8b")
+    emb_dims = 2560 if "4b" in emb_model else 4096
     embedding_model = OpenAIEmbeddings(
-        model=os.environ.get("FIREWORKS_EMBEDDING_MODEL", "accounts/fireworks/models/qwen3-embedding-8b"),
+        model=emb_model,
         openai_api_key=os.environ["FIREWORKS_API_KEY"],
         openai_api_base="https://api.fireworks.ai/inference/v1",
         check_embedding_ctx_length=False,
-        dimensions=4096,
+        dimensions=emb_dims,
     )
     qdrant_vectorstore = QdrantVectorStore.from_documents(
         documents=chunks,
