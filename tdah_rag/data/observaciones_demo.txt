@@ -1,0 +1,114 @@
+OBSERVACIONES DE PADRES - DATOS DE DEMOSTRACIÓN
+Sistema RAG TDAH - Pacientes Ficticios para Evaluación
+=======================================================
+
+--- PACIENTE: Lucas M. | Edad: 9 años | Diagnóstico: TDAH combinado | Medicación: Metilfenidato 10mg ---
+
+[2024-01-15] [Lucas] [Mamá] COMPORTAMIENTO
+Lucas tuvo un día muy difícil en el colegio. La maestra llamó para decir que no pudo quedarse sentado en clase durante más de cinco minutos seguidos. Interrumpió la clase tres veces y empujó a un compañero en el recreo. En casa, intentó hacer la tarea pero se levantó de la silla más de diez veces en una hora. No logró concentrarse más de tres minutos en ninguna actividad sin distracción. Perdió el estuche de lápices por segunda vez esta semana.
+
+[2024-01-15] [Lucas] [Mamá] MEDICACION
+Lucas tomó el metilfenidato a las 7:30 de la mañana antes del desayuno. Noté que alrededor de las 13:00 empezó a estar más inquieto, probablemente cuando pasó el efecto de la medicación. No hubo resistencia para tomarlo hoy. Sin efectos secundarios visibles en la mañana, pero en la tarde estaba muy irritable y se quejó de dolor de cabeza leve.
+
+[2024-01-15] [Lucas] [Mamá] SUENO
+Anoche Lucas tardó casi una hora en dormirse a pesar de estar en cama a las 21:00. Se levantó dos veces pidiendo agua y una vez porque "tenía miedo". Se despertó a las 7:00 pero estaba cansado y de mal humor al despertar. Ha pasado varias noches seguidas con este patrón de dificultad para dormirse.
+
+[2024-01-16] [Lucas] [Papá] COMPORTAMIENTO
+Hoy fue mucho mejor que ayer. Lucas terminó sus tareas en 45 minutos con solo dos recordatorios. Jugó con su hermano durante 30 minutos sin peleas. En el parque se integró bien con otros niños aunque en un momento quiso cambiar las reglas del juego y los demás no querían. Lo manejó razonablemente bien después de que intervine brevemente.
+
+[2024-01-16] [Lucas] [Papá] EMOCIONAL
+Lucas estuvo de buen humor la mayor parte del día. Hubo un episodio de frustración cuando no pudo armar un Lego como quería, pero se calmó en unos 10 minutos solo. Me dijo "papá, a veces siento que soy el más lento de la clase" lo que me preocupó. Le di ánimo pero creo que su autoestima necesita trabajo.
+
+[2024-01-17] [Lucas] [Mamá] ALIMENTACION
+El apetito de Lucas sigue siendo un problema. Solo comió la mitad del desayuno y casi nada en el almuerzo del colegio (la maestra me avisó). En la cena sí comió bien porque ya habían pasado horas desde la última dosis de medicación. Ha perdido algo de peso según nota su ropa. Toma poca agua durante el día.
+
+[2024-01-18] [Lucas] [Mamá] MEDICACION
+Hoy olvidamos darle la medicación a tiempo, se la dimos a las 9:15 en lugar de las 7:30. La diferencia fue notable: en las primeras horas del colegio según la maestra estuvo muy agitado e incapaz de seguir instrucciones. Hacia el mediodía mejoró. Esto confirma lo importante que es la consistencia con el horario.
+
+[2024-01-19] [Lucas] [Papá] ACADEMICO
+Reunión con la tutora de Lucas hoy. Dice que cuando logra concentrarse es brillante, capta los conceptos muy rápido. El problema es que en las pruebas escritas no termina porque se distrae o se pone a garabatear. Sugirió que Lucas pueda hacer las evaluaciones con tiempo extra. Sus notas actuales: Matemáticas 6/10, Lengua 5/10, Ciencias 8/10 (le encanta).
+
+[2024-01-20] [Lucas] [Mamá] SUENO
+Gran mejoría esta semana en el sueño. Seguimos la rutina que recomendó el médico: baño caliente a las 20:30, lectura tranquila hasta las 21:00, sin pantallas desde las 20:00. Lucas se durmió en menos de 20 minutos y durmió toda la noche. Amaneció descansado y de buen humor. La rutina parece estar funcionando.
+
+[2024-01-22] [Lucas] [Mamá] COMPORTAMIENTO
+Episodio preocupante hoy. Lucas tuvo una rabieta de 40 minutos porque no quiso apagar la tablet. Gritó, tiró un libro y se encerró en su cuarto. Cuando se calmó no recordaba bien por qué había reaccionado tan fuerte. Dijo que "algo dentro de él explota y no puede controlarlo". Me parece importante que el médico sepa esto.
+
+--- PACIENTE: Sofía R. | Edad: 13 años | Diagnóstico: TDAH inatento | Medicación: Atomoxetina 25mg ---
+
+[2024-01-15] [Sofía] [Mamá] ACADEMICO
+Sofía llegó del colegio muy frustrada. Tuvo examen de historia y dice que estudió mucho pero cuando llegó al examen "se quedó en blanco". Los profesores dicen que parece distraída y que frecuentemente hay que repetirle las instrucciones. Su libreta de calificaciones bajó considerablemente este trimestre. Teme no pasar el año y esto la pone muy ansiosa.
+
+[2024-01-15] [Sofía] [Mamá] EMOCIONAL
+Sofía lleva varias semanas muy ansiosa con el colegio. Hoy me dijo que siente que es "menos inteligente que todos". Lloró por la tarde y dijo que se siente diferente a sus compañeras. Tiene dificultad para ver sus propias fortalezas. Está muy sensible y cualquier crítica la afecta mucho. Me preocupa su estado de ánimo en general.
+
+[2024-01-16] [Sofía] [Papá] SOCIAL
+Sofía se fue a estudiar a casa de su amiga Valentina. Según Sofía fue bien aunque a veces siente que no puede seguir las conversaciones cuando hablan muchas personas a la vez. Le cuesta conectar con grupos grandes. Tiene una amistad muy cercana con Valentina pero en el grupo más amplio se siente excluida a veces porque "se pierde en las conversaciones".
+
+[2024-01-17] [Sofía] [Mamá] MEDICACION
+La atomoxetina lleva tres semanas y estamos viendo lentamente algunos cambios positivos. Hoy Sofía pudo hacer dos horas de tarea con solo tres interrupciones (antes eran constantes). Todavía tiene momentos de "desconexión" donde parece que está en otro mundo. No ha habido efectos secundarios importantes, aunque las primeras dos semanas tuvo algo de náuseas al inicio.
+
+[2024-01-18] [Sofía] [Mamá] SUENO
+El sueño de Sofía es bastante bueno, duerme bien una vez que se duerme. El problema es que le cuesta empezar a dormir porque la mente no para. Dice que cuando está en la cama empieza a pensar en todo lo que hizo mal durante el día y eso le genera ansiedad. Se duerme alrededor de las 23:00 y se despierta a las 7:00, son horas suficientes pero la calidad no es óptima.
+
+[2024-01-19] [Sofía] [Papá] COMPORTAMIENTO
+Sofía tuvo un día tranquilo en casa. Se olvidó de entregar un trabajo en el colegio que sí tenía hecho pero no lo llevó. Este tipo de olvidos son frecuentes y la frustran mucho. Organizamos juntos su mochila y usamos una lista de verificación, lo cual pareció ayudar. Le falta sistema para organizarse pero cuando tiene la estructura externa le va mejor.
+
+[2024-01-20] [Sofía] [Mamá] EMOCIONAL
+Hoy fue un día positivo para Sofía. Sacó un buen resultado en el examen de matemáticas (8/10) y llegó a casa muy contenta. Dijo "mamá, cuando entiendo algo, lo entiendo muy bien". Me alegró verla orgullosa. Estos momentos de éxito son importantes para su autoestima. El médico tiene razón en que necesita vivir más estos logros.
+
+[2024-01-21] [Sofía] [Mamá] MEDICACION
+Preocupación con la medicación: Sofía no quiere tomarla los fines de semana. Dice que los sábados y domingos "se siente más ella misma" sin la medicación, aunque reconoce que está más dispersa. Tuvimos una conversación larga sobre esto. Creo que necesita hablar con el médico sobre sus sentimientos hacia la medicación porque su resistencia está aumentando.
+
+[2024-01-23] [Sofía] [Mamá] SOCIAL
+Gran noticia: Sofía fue elegida para participar en el club de teatro del colegio. Esto la tiene muy emocionada. Dice que actuar le resulta más fácil porque tiene el guión que seguir. Ya ensayó sus líneas tres veces seguidas sin distracción, lo cual es inusual para ella. Cuando algo le apasiona, su capacidad de concentración mejora notablemente.
+
+--- PACIENTE: Mateo D. | Edad: 16 años | Diagnóstico: TDAH hiperactivo-impulsivo | Medicación: Metilfenidato liberación prolongada 20mg ---
+
+[2024-01-15] [Mateo] [Mamá] COMPORTAMIENTO
+Mateo llegó del colegio furioso porque el profesor de física lo sacó del aula por hablar sin permiso. Según Mateo el profesor "lo tiene manía" y según el parte escolar interrumpió la clase cinco veces. Esta situación se repite cada semana con al menos un profesor. Mateo tiene dificultad para reconocer que su comportamiento afecta a los demás aunque por la noche, cuando está tranquilo, puede reflexionar mejor sobre eso.
+
+[2024-01-15] [Mateo] [Papá] EMOCIONAL
+Conversé largo con Mateo esta noche. Reconoce que a veces actúa antes de pensar y lo lamenta después. Está frustrado porque dice que "lo intenté, simplemente no pude quedarme callado". También mencionó que algunos compañeros lo molestan llamándolo "el loquito de la clase" lo que le duele aunque dice que no le importa. Su autoestima está afectada aunque lo oculte con actitud desafiante.
+
+[2024-01-16] [Mateo] [Mamá] MEDICACION
+Mateo rechazó tomar la medicación esta mañana. Dijo que lo hace sentir como "un zombie" y que no es él mismo cuando la toma. Este rechazo es la tercera vez este mes. Sin medicación el día fue muy difícil: conflicto con el hermano mayor, no pudo estudiar y estuvo irritable toda la tarde. Necesitamos urgentemente hablar con el médico sobre este rechazo porque en un adolescente la adherencia es crítica.
+
+[2024-01-17] [Mateo] [Mamá] ACADEMICO
+Mateo está repitiendo el año en riesgo. Le faltan entregar cuatro trabajos de distintas materias, todos los tiene empezados pero nunca terminados. Tiene capacidad intelectual de sobra, su problema es terminar lo que empieza. Hoy logró terminar uno de los trabajos con mi supervisión constante. Cuando hay alguien sentado al lado que le recuerda volver a la tarea, puede trabajar bien.
+
+[2024-01-18] [Mateo] [Papá] SOCIAL
+Mateo tiene un grupo de amigos con quienes sale los fines de semana y eso es positivo. Sin embargo me preocupa que algunos de esos amigos tienen comportamientos de riesgo. Mateo por su impulsividad es más susceptible a la presión de grupo. Esta semana llegó tarde sin avisar porque "se le olvidó la hora". Cuando le pregunté estaba a la defensiva y me costó mucho mantener una conversación calmada con él.
+
+[2024-01-19] [Mateo] [Mamá] MEDICACION
+Hoy Mateo tomó la medicación y la diferencia fue notable. Estudió matemáticas durante una hora y media casi sin interrupciones. Pude ver en su cara una mayor tranquilidad. Por la tarde me dijo que cuando toma la medicación puede "escuchar mejor lo que pienso". Me parece que el rechazo a la medicación tiene más que ver con cómo se siente la identidad que con los efectos reales.
+
+[2024-01-20] [Mateo] [Papá] COMPORTAMIENTO
+Mateo tuvo un episodio de impulsividad importante: en un partido de fútbol con amigos empujó a otro chico luego de un insulto y casi termina en pelea mayor. Él reconoce que reaccionó mal. Cuando se calmó y hablamos, pudo identificar la señal de alerta ("sentí que me hervía la sangre") pero dijo que en el momento no pudo parar. Trabaja estas estrategias con la psicóloga pero necesita más práctica.
+
+[2024-01-22] [Mateo] [Mamá] SUENO
+El patrón de sueño de Mateo es muy irregular. Se queda despierto hasta las 2:00 o 3:00 de la madrugada mirando el celular o jugando videojuegos. Por las mañanas es imposible despertarlo y llega tarde al colegio al menos tres veces por semana. Ha tenido tres partes por impuntualidad este mes. Le hemos pedido que deje el celular fuera del cuarto pero no cumple con el acuerdo. Necesitamos estrategias más firmes.
+
+[2024-01-23] [Mateo] [Papá] ACADEMICO
+Buenas noticias: Mateo entregó dos de los cuatro trabajos pendientes y los profesores los recibieron favorablemente. Está motivado porque entiende que si los entrega todos esta semana puede recuperar el año. Cuando tiene una meta clara y un plazo cercano puede enfocarse mejor. Estuvo trabajando casi tres horas esta tarde con pocas interrupciones. El factor de urgencia parece activarlo positivamente.
+
+[2024-01-24] [Mateo] [Mamá] EMOCIONAL
+Mateo tuvo una crisis emocional hoy. Rompió a llorar porque dijo que se siente "un fracasado" y que "nunca va a poder ser normal". Fue muy doloroso escucharlo. Le costó mucho calmarse, estuvo llorando y hablando durante casi una hora. Después dijo que se sentía mejor. Creo que carga con mucha frustración acumulada por años de dificultades. La próxima sesión con la psicóloga es clave.
+
+--- ALERTAS Y NOTAS DEL SISTEMA ---
+
+[ALERTA-MEDICACION] [Lucas] Adherencia irregular: Tres olvidos de dosis en dos semanas. Patrón de wearing-off a las 5-6 horas. Revisar posología y horarios.
+
+[ALERTA-MEDICACION] [Sofía] Resistencia activa a la medicación los fines de semana. Paciente verbaliza sentir cambio de identidad con medicación. Requiere intervención psicoeducativa.
+
+[ALERTA-MEDICACION] [Mateo] Tres rechazos activos a la medicación este mes. Paciente adolescente con alta resistencia. Sin medicación: conflictos frecuentes, riesgo académico. Adherencia crítica.
+
+[ALERTA-EMOCIONAL] [Mateo] Episodio de llanto intenso con verbalización de sentimientos de fracaso y baja autoestima severa. Requiere atención en próxima consulta.
+
+[ALERTA-ACADEMICO] [Mateo] Riesgo de repetir año escolar. Cuatro trabajos pendientes. Intervención urgente necesaria.
+
+[NOTA-POSITIVA] [Lucas] Mejoría significativa en sueño con rutina implementada. Continuar protocolo actual.
+
+[NOTA-POSITIVA] [Sofía] Participación en teatro escolar. Hiperfoco positivo identificado. Potenciar actividades similares.
+
+[NOTA-POSITIVA] [Mateo] Capacidad de trabajo bajo presión y metas claras. Estrategia a aprovechar terapéuticamente.
