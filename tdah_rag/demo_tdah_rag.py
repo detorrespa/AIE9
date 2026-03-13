@@ -201,18 +201,20 @@ print(f"""
 print("Puntuaciones promedio (top-1 score por consulta):")
 print(f"  {'Métrica':12s}  {'Promedio':>10s}  {'Min':>10s}  {'Max':>10s}")
 print(f"  {'-'*46}")
-best_metric = None
-best_avg = -999
+avgs = {}
 for metrica in METRICAS:
     scores = resultados_por_metrica[metrica]
-    avg = sum(scores) / len(scores)
+    avgs[metrica] = sum(scores) / len(scores)
+
+best_metric = max(avgs, key=lambda m: avgs[m])
+
+for metrica in METRICAS:
+    scores = resultados_por_metrica[metrica]
+    avg = avgs[metrica]
     mn  = min(scores)
     mx  = max(scores)
-    flag = " ← mejor" if metrica == "cosine" else ""
+    flag = " ← mejor" if metrica == best_metric else ""
     print(f"  {metrica:12s}  {avg:+.4f}      {mn:+.4f}      {mx:+.4f}{flag}")
-    if avg > best_avg:
-        best_avg = avg
-        best_metric = metrica
 
 # ===========================================================================
 # PASO 6 — Demo: búsqueda filtrada por paciente + categoría
